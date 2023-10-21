@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    
+    background-image:url(../imagens/download.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100% ;
+    margin: 0 auto;
+}
+
+header{
+    text-align: center;
+   
+}
+form{
+    background-color: #3c3c6acc;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 20px;
+}
+#alinhar{
+    width: 55%;
+}
+ul{
+    list-style:none;
+    margin: 0;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+#idnome,#idemail,#idage,#idselect,#idrole,#idopinion,textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 20[ppx];
+    
+    
+    
+}
+ul{
+    padding: 0;
+}

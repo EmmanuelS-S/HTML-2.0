@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário | GN</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+            
+        }
+        .box{
+            margin:100px 0px;
+            color:white;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50% );
+            background-color: rgba(0, 0, 0, 0.6);
+            padding:15px;
+            border-radius:15px;
+            width:30%;
+            
+        }
+        
+        legend{
+            color:white;
+            border: 1px solid dodgerblue;
+            border-radius: 8px;
+            padding:10px;
+            text-align: center;
+            background-color: dodgerblue;
+
+        }
+        .inputbox{
+            position:relative;
+            
+        }
+        .inputuser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline:none;/*o outiline é a especie de borda que fica quando clica no input*/
+            color:white;
+            font-size:15px;
+            width:100%;
+            letter-spacing: 2px;
+        }
+        fieldset{
+            border:3px solid dodgerblue;
+        }
+        #iddata-nascimento{
+            margin-left:5px;
+        }
+        .labelinput{
+            position:absolute;
+            top:0px;
+            left:0px;
+            pointer-events:none ;/*nao sei o que quer dizer*/
+            transition: .5s;
+        }
+        
+        .inputuser:focus ~ .labelinput, .inputuser:valid ~ .labelinput{
+            color:dodgerblue;
+            top:-20px;
+            font-size: 12px;
+        }
+        #iddata-nascimento{
+            border:none;
+            padding: 8px;
+            border-radius:10px;
+            outline:none;
+            font-size:11px;
+        }
+        #idsubmit{
+            color:white;
+            border:none;
+            padding: 15px;
+            width:100%;
+            border-radius:10px;
+            font-size:15px;
+            background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+            cursor:pointer;
+        }
+        #idsubmit:hover{
+            background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="get">
+            <fieldset>
+                <legend><strong>formulário de Clientes</strong></legend>
+                <br>
+                <div class="inputbox">
+                    <input type="text" name="nome" id="idnome" class="inputuser" required>
+                    <label for="idnome" class="labelinput">Nome Completo</label>
+                </div>
+                <br><br>
+                <div class="inputbox">
+                    <input type="text" name="email" id="idemail" class="inputuser" required>
+                    <label for="idemail"  class="labelinput">Email</label>
+                </div>
+                <br><br>
+                <div class="inputbox">
+                    <input type="tel" name="telefone" id="idtelefone" class="inputuser" required>
+                    <label for="idtelefone" class="labelinput">Telefone</label>
+                    <p>sexo:</p>
+                    <input type="radio" name="genero" id="idfeminino" value="feminino" required>
+                    <label for="idfeminino">feminino</label>
+                    <br>
+                    <input type="radio" name="genero" id="idmasculino" value="masculino" required>
+                    <label for="idmasculino">Masculino</label>
+                    <br>
+                    <input type="radio" name="genero" id="idoutro" value="outro" required>
+                    <label for="idoutro">Outro</label>
+                </div>
+                <br><br>
+                <div class="inputbox">
+                    <label for="iddata-nascimento"><strong>Data de Nascimento:</strong></label><input type="date" name="data-nascimento" id="iddata-nascimento" 
+                     required>
+                </div>
+                <br><br>
+                <div class="inputbox">
+                    <input type="text" name="cidade" id="idcidade" class="inputuser" required>
+                    <label for="idcidade" class="labelinput">Cidade</label>
+                </div>
+                <br><br>
+                <div class="inputbox">
+                    <input type="text" name="estado" id="idestado" class="inputuser" required>
+                    <label for="idestado" class="labelinput">Estado</label>
+                </div>
+                <br><br>
+                <div class="inputbox">
+                    <input type="text" name="endereco" id="idendereco" class="inputuser" required>
+                    <label for="idendereco" class="labelinput">Endereço</label>
+                </div>
+                <br><br>
+                <input type="submit" value="Submit" name="submit" id="idsubmit">
+                
+                
+            </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>

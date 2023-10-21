@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+        :root{
+            --fonte-padrao: 'Poppins', 'sans-serif';
+            --cor-branca: #ffffff;
+            --cor-preta: #000000;
+            --cor1: #565790;
+            --cor2:rgba(42, 42, 72, 0.8);
+            --cor3: #37AF65;
+        }
+        *{
+            font-family: var(--fonte-padrao);
+             color:var(--cor-branca);
+        }
+        
+        body{
+           
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.4;
+            background-color:var(--cor1);
+        }
+        header{
+            
+            
+            text-align:center;
+            padding: 0 10px;
+            margin-bottom: 30px;
+        }
+        header > p{
+            color:var(--cor-branca);
+            font-style: italic;
+            font-weight: 200;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            
+        }
+        form{
+            background-color: var(--cor2);
+            margin:auto;
+            padding: 2.5rem;
+            border-radius:0.25rem;
+            
+            
+        }
+        ul{
+            list-style: none;
+            padding: 0px;
+            margin: 0 auto;
+            justify-content: center;
+            display:block;
+            
+        }
+        li{
+            margin:0 auto 1.25rem auto;
+            align-items: center;
+            display: block;
+            padding-right:10px ;
+        }
+        label{
+            display: flex;
+            font-size: 1.125rem;
+        } 
+        select, input, button, textarea{
+            margin:0;
+            
+        }
+        .input-radio, .input-checkbox{
+            margin-right: 0.625rem;
+            min-height: 1.25rem;
+            min-width: 1.25rem
+        }
+        
+        .form-control{
+            color: #495057;
+            width:100%;
+            max-height: 38px;
+            height: 26px;
+            padding: 0.375rem 0.75rem;
+            border: 1px solid black;
+            border-radius:0.25rem;
+            display:block;
+            
+        }
+        
+       
+        .container{
+            
+            display: block;
+            justify-content: center;
+            margin: 3.125rem auto 0 auto;
+            width: 100%;
+            max-width:720px;
+            
+            
+        }
+        
+        
+        
+        h1, p{
+            font-weight: 400;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            color:var(--cor-branca);
+        }
+        select{
+            box-sizing: border-box;
+            height: 26px;
+            width: 100%;
+
+        }
+        #idtextarea{
+            width: 100%;
+            padding: 0.375rem 0.75rem;
+            height: 134px;
+            box-sizing: border-box;
+        }
+        #idsubmit{
+            color:var(--cor-branca);          
+            background-color: var(--cor3);
+            width:100%;
+            padding:12px;
+            border:none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>freeCodeCamp Survey Form</h1>
+            <p>Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <form action="#" method="get">
+            <ul>
+                <li>
+                    <label for="idname">Name</label>
+                    <input type="text" name="name" id="idname" placeholder="enter your name" class="form-control" required>
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="idemail" placeholder="enter your Email" class="form-control"
+                    required>
+                </li>
+                <li>
+                    <label for="age">
+                        Age <span>(optional)</span>
+                    </label>
+                    <input type="number" name="age" id="idage"
+                    placeholder="Age" class="form-control" required>
+                </li>
+                <li>
+                    <p>Which option best describes your current role?</p>
+                    <select name="current role" id="idrole" title="current role" class="form-control" required>
+                        <option disabled selected value>Select current role</option>
+                        <option value="Student">
+                            Student
+                        </option>
+                        <option value="Full Time job">Full Time job</option>
+                        <option value="Full Time learner">Full Time learner</option>
+                        <option value="Prefet not to say">Prefet not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </li>
+                <li>
+                    <p>Would you recommend freeCodeCamp to a friend?</p>
+                    <label for="idDefinitely">
+                        <input type="radio" value="Definitely" id="idDefinitely" name="check" class="input-radio" checked>
+                        Definitely
+                    </label>
+                    
+                    <label for="maybe">
+                        <input type="radio" name="check" id="maybe"value="maybe" class="input-radio">
+                        Maybe
+                    </label>
+                    
+                    <label for="not sure">
+                        <input type="radio" name="check" id="not sure" value="not sure" class="input-radio">Not sure
+                    </label>
+                </li>
+                <li>
+                    <p>What is your favorite feature of freeCodeCamp?</p>
+                    <select name="favorite feature" id="idfavoritefeature" title="favorite feature" class="form-control" required>
+                        <option disabled selected value>Select an option</option>
+                        <option value="challanges">challanges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="open source">Open source</option>
+                    </select>
+                </li>
+                <li>
+                    <p>What would you like to see improved? <span>(Check all that apply)</span></p>
+                    
+                    <label for="idFront-end Projects">
+                        <input type="checkbox" name="Front-end Projects" id="idFront-end Projects" value="Front-end Projects" class="input-checkbox">
+                        Front-end Projects
+                    </label>
+                    
+                    <label for="idBack-end Projects">
+                        <input type="checkbox" name="Back-end Projects" id="idBack-end Projects" value="Back-end Projects" class="input-checkbox">
+                        Back-end Projects
+                    </label>
+                    
+                    <label for="idData Visualization">
+                        <input type="checkbox" name="Data Visualization" id="idData Visualization" value="Data Visualization" class="input-checkbox">
+                        Data Visualization
+                    </label>
+                    
+                    <label for="idChallenges">
+                        <input type="checkbox" name="Challenges" id="idChallenges" value="Challenges" class="input-checkbox">
+                        Challenges
+                    </label>
+                    
+                    <label for="idOpen Source Community">
+                        <input type="checkbox" name="Open Source Community" id="idOpen Source Community" value="Open Source Community" class="input-checkbox">
+                        Open Source Community
+                    </label>
+                </li>
+                <li>
+                    <label for="idtextarea">Any comments or suggestions?</label>
+                    <textarea name="comments or suggestions" id="idtextarea" cols="30" rows="10" placeholder="enter your comment here..."></textarea >
+                </li>
+                <li>
+                    <input type="submit" value="submit" id="idsubmit">
+                </li>
+            </ul>
+        </form>
+
+    </div>
+    
+</body>
+</html>
