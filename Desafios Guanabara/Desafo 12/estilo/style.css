@@ -1,0 +1,15 @@
+@charset "UTF-8";
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    min-height: 100vh; /*100% da viwer height para ocupar a tela inteira*/
+    background: darkgray;
+}
+.normal{
+
+}
+.imagem{
+
+}
