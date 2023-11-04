@@ -1,20 +1,32 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 *{
     margin:0px;
     padding:0px;
+    font-size: 1em;
 }
-body{
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Passion One', sans-serif;
+    --fonte3:'Sriracha', cursive;
+}
+html,body{
     min-height: 100vh; /*100% da viwer height para ocupar a tela inteira*/
     background: darkgray;
+    font-family: var(--fonte1);
 }
 header{
     background-color:black;
     color:white;
     text-align: center;
+    
 }
 header > h1{
     padding-top:50px;
     font-variant:small-caps;
+    font-family: var(--fonte2);
+    font-size:10vw;
     
 }
 header > p{
@@ -25,17 +37,21 @@ header a, footer a{
     text-decoration: none;
     font-weight: bolder;
 }
-header a:hover footer a:hover{
-    text-decoration:underline;
+header a:hover,footer a:hover{
+    text-decoration:underline ;
 }
 section{
     padding:10vh 0;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size:3.5vw;
 }
 section.imagem > p{
     background-color:grey;
-    width:400px;
+    display:inline-block;
+    padding:5px;
+    
 }
 
 section.normal{

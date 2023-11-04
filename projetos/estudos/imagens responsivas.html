@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens responsivas</title>
+    <style>
+        body{
+            display:flex;
+            margin-bottom:200rem;
+        }
+        img{
+            width:25rem;
+            height: 25rem;
+            border:1px solid red;
+        }
+        .img1{
+
+        }
+    </style>
+</head>
+<body>
+    <div class="img1">
+        <picture>
+            <source media="(min-width:600px )" srcset="imagens/target001.png">
+            <img src="imagens/pattern001.png" alt="">
+        </picture>
+    </div>
+    <div class="img2">
+        <picture>
+            <source media="(max-width:600px )" srcset="imagens/target001.png">
+            <img src="imagens/pattern001.png" alt="">
+        </picture>
+    </div>
+    
+</body>
+</html>
