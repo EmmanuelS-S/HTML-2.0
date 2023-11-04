@@ -7,9 +7,50 @@ body{
     min-height: 100vh; /*100% da viwer height para ocupar a tela inteira*/
     background: darkgray;
 }
-.normal{
-
+header{
+    background-color:black;
+    color:white;
+    text-align: center;
 }
-.imagem{
+header > h1{
+    padding-top:50px;
+    font-variant:small-caps;
+    
+}
+header > p{
+    padding-bottom: 50px;
+}
+header a, footer a{
+    color:white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover footer a:hover{
+    text-decoration:underline;
+}
+section{
+    padding:10vh 0;
+    line-height: 2em;
+    padding-left: 30px;
+}
+section.imagem > p{
+    background-color:grey;
+    width:400px;
+}
 
+section.normal{
+    background-color:white;
+    color:black;
+}
+section.imagem{
+    background-color: rgb(77, 70, 70);
+    color:white;
+}
+
+
+footer{
+    color:white;
+    background-color: black;
+    padding:10px;
+    text-align: center;
 }
