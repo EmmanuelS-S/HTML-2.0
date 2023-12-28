@@ -1,0 +1,117 @@
+@ -1,116 +0,0 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forulário</title>
+    <link rel="stylesheet" href="style-formulario.css">
+    
+</head>
+<body>
+    
+    <!--formulário o action informa para onde os dados recolhidos deverão ser enviados a um local através de uma URL.já o method -->
+    <div id="container">
+        <div id="alinhar">
+            <header>
+            <h1>freeCode</h1>
+            <p>thanks fot takkin time to do this</p>
+        </header>
+        <form action="#" method="get">
+        <ul>
+            <li id="teste">
+                <label for="idnome">Name</label>
+                <input type="text" id="idnome" name="idtexto" placeholder="Enter your name">
+            </li>
+            <li>
+                <label for="idemail">Email</label>
+                <input type="email" name="idemail" id="idemail" placeholder="Enter your email ">
+            </li>
+            <li>
+                <label for="idage">Age</label>
+                <input type="number" name="idage" id="idage"
+                placeholder="Age">
+            </li>
+            <li>
+                <p>which option best describes your current role
+                <select name="" id="idrole" size="">
+                    <option disabled selected value="">Select your current role</option>
+                    <!--como fazer para aparecer nas opçoes mas n ser possivel selecionar. consegui fazer para aparecer mas ele nao fica na frente dom select -->
+                    <option value="1">Student</option>
+                    <option value="2">Full Time Job</option>
+                    <option value="3">Full Time Learner</option>
+                    <option value="4">Prefer Not To Say</option>
+                    <option value="5">Other</option>
+                </select>
+            
+            </li>
+            <li>
+                <p>would you recomend freeCodeCamp to a friend</p>
+                <label for="opcao1">
+                    <input type="radio" name="opcao" id="opcao1">Definitely</label>
+                <label for="opcao2">
+                    <input type="radio" name="opcao" id="opcao2">Maybe</label>
+                <label for="opcao3">
+                    <input type="radio" name="opcao" id="opcao3">Not sure</label>
+                
+            </li>
+            <li>
+                <p>what is your favorite feature of freeCodeCamp</p>
+                <select name="" id="idopinion">
+                    <option selected disabled value="">Select an option</option>
+                    <option value="">Challenges</option>
+                    <option value="">Projects</option>
+                    <option value="">Community</option>
+                    <option value="">Oper Source</option>
+                </select>
+            </li>
+            <li>
+                <p>What would like to see improved(Check all that apply)</p>
+                <label for="Front-end Projects">
+                    <input type="checkbox" name="Front-end Projects" id="Front-end Projects">Front-end Projects</label>
+                
+                <label for="Back-end Projects">
+                    <input type="checkbox" name="Back-end Projects" id="Back-end Projects">Back-end Projects</label>
+                
+                <label for="Data Visualization">
+                    <input type="checkbox" name="Data Visualization" id="Data Visualization">Data Visualization</label>
+                
+                <label for="Challenges">
+                    <input type="checkbox" name="Challenges" id="Challenges">Challenges</label>
+                
+                <label for="Open Source Community">
+                    <input type="checkbox" name="Open Source Community" id="Open Source Community">Open Source Community</label>
+                
+                <label for="Gitter help rooms">
+                    <input type="checkbox" name="Gitter help rooms" id="Gitter help rooms">Gitter help rooms</label>
+               
+                <Label for="Videos">
+                    <input type="checkbox" name="Video" id="Videos">Videos</Label>
+               
+                <label for="City Meetups">
+                    <input type="checkbox" name="City Meetups" id="City Meetups">City Meetups</label>
+                
+                <label for="Wiki">
+                    <input type="checkbox" name="Wiki" id="Wiki">Wiki</label>
+
+                <label for="Forum">
+                    <input type="checkbox" name="Forum" id="Forum">Forum</label>
+                
+            </li>
+            <li>
+                <p>Any comments or suggestions</p>
+            </li>
+            
+            <li>
+                <textarea name="" id="" placeholder="Enter your comment here ..." cols="35" rows="8"></textarea>
+            <li>
+                <input type="submit" value="Submit">
+            </li>
+        </ul>
+        <button><a href="" target="_blank">sim</a></button>
+        
+        </form>
+     </div>
+    </div>
+</body>
+</html>
