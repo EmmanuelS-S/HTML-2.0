@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax site</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap');
+        :root{
+            --img1: url(https://jolly-kalam-23776e.netlify.app/parallaxsite/img/image1.jpg);
+            --img2: url(https://jolly-kalam-23776e.netlify.app/parallaxsite/img/image2.jpg);
+            --img3: url(https://jolly-kalam-23776e.netlify.app/parallaxsite/img/image3.jpg);
+            --color1: #F4F4F4;
+            --color2: #282E34;
+            --baackground-text-color: #575757;
+        }
+        *{
+            margin:0;
+            padding:0;
+        }
+        body,html{
+            font-family: 'Lato', Arial, sans-serif;
+        }
+        div.container{
+            text-align:center;
+        }
+        section.section-grey{
+            padding:50px 80px;
+            background-color:var(--color1);
+        }
+        section.section-black{
+            background-color:var(--color2);
+            padding:50px 80px;
+        }
+        div.imagem-fundo1, div.imagem-fundo2, div.imagem-fundo3{
+            color:white;
+            background:center center no-repeat fixed;
+            background-size:cover;
+            opacity:.7;
+            position:relative;
+        }
+        div.imagem-fundo1{
+            background-image:var(--img1);
+            position:relative;
+            min-height:100vh;
+            
+        }
+        div.imagem-fundo1 > span{
+            position:absolute;
+            top:53%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            padding: 20px;
+            font-size: 1.7rem;
+            letter-spacing:10px;
+            text-transform: uppercase;background-color:var(--baackground-text-color);
+            
+        }
+        div.imagem-fundo2{
+            background-image:var(--img2);
+            min-height:400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .imagem-fundo2 > span{
+
+        }
+        div.imagem-fundo3{
+            background-image:var(--img3);
+            min-height:400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="imagem-fundo1">
+           <span>prallax website</span>
+        </div>
+        <section class="section-grey">
+            <h2>Section one</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in. Distinctio provident dolorem modi cumque illo enim quidem tempora deserunt nostrum voluptate labore repellat quisquam quasi cum suscipit dolore ab consequuntur, ad porro earum temporibus. Laborum ad temporibus ex, omnis!</p>
+        </section>
+        <div class="imagem-fundo2">
+            <span>IMAGE TWO TEXT</span>
+        </div>
+        <section class="section-black">
+                <h2>Section two</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.</p>
+            </section>
+            <div class="imagem-fundo3">
+                <span>IMAGE THREE TEXT</span>
+            </div>
+            <section class="section-grey">
+                <h2>Section three</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.</p>
+            </section>
+            <div class="imagem-fundo1">
+                <span>TRAVERSY MEDIA</span>
+            </div>
+        
+    </div>
+    
+</body>
+</html>
