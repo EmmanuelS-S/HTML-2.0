@@ -19,12 +19,18 @@
             padding:0;
         }
         body,html{
+            
             font-family: 'Lato', Arial, sans-serif;
+            color:white;
+            line-height: 1.8em;
         }
         div.container{
+            
             text-align:center;
+            
         }
         section.section-grey{
+            color:black;
             padding:50px 80px;
             background-color:var(--color1);
         }
@@ -33,7 +39,7 @@
             padding:50px 80px;
         }
         div.imagem-fundo1, div.imagem-fundo2, div.imagem-fundo3{
-            color:white;
+            
             background:center center no-repeat fixed;
             background-size:cover;
             opacity:.7;
@@ -46,6 +52,14 @@
             
         }
         div.imagem-fundo1 > span{
+            color: white;
+            background-color:black;
+            display:block;
+            padding: 20px;
+
+        }
+        
+        div.imagem-fundo1 > .text{
             position:absolute;
             top:53%;
             left:50%;
@@ -58,45 +72,55 @@
         }
         div.imagem-fundo2{
             background-image:var(--img2);
+            
+        }
+        .imagem-fundo2 > span{
+            
+        }
+        div.imagem-fundo2, div.imagem-fundo3{
             min-height:400px;
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-        .imagem-fundo2 > span{
+            font-size: 1.7rem;
+            letter-spacing:8px;
+            text-transform: uppercase;
 
         }
         div.imagem-fundo3{
             background-image:var(--img3);
-            min-height:400px;
+            
         }
+        
     </style>
 </head>
 <body>
     <div class="container">
         <div class="imagem-fundo1">
-           <span>prallax website</span>
+           <div class="text">
+            <span>prallax website</span>
+        </div>
         </div>
         <section class="section-grey">
             <h2>Section one</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in. Distinctio provident dolorem modi cumque illo enim quidem tempora deserunt nostrum voluptate labore repellat quisquam quasi cum suscipit dolore ab consequuntur, ad porro earum temporibus. Laborum ad temporibus ex, omnis!</p>
         </section>
         <div class="imagem-fundo2">
-            <span>IMAGE TWO TEXT</span>
+            <span>image two text</span>
         </div>
         <section class="section-black">
                 <h2>Section two</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.</p>
             </section>
             <div class="imagem-fundo3">
-                <span>IMAGE THREE TEXT</span>
+                <span> image three text</span>
             </div>
             <section class="section-grey">
                 <h2>Section three</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.</p>
             </section>
             <div class="imagem-fundo1">
-                <span>TRAVERSY MEDIA</span>
+                <div class="text"><span>traversy media</span></div>
             </div>
         
     </div>
