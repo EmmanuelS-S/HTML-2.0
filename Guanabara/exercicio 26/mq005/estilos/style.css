@@ -20,15 +20,14 @@ header  > h1{
     width:100vw;
     text-align: center;
     padding:10px;
+    transition: .3s;
 }
 #burger:hover{
     color:black;
     background-color:white;
     cursor:pointer;
 }
-#burger:checked{
-    background-color: blue;
-}
+
 menu{
     display:none;
 }
